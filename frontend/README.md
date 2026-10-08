@@ -1,16 +1,61 @@
-# React + Vite
+# AI Resume Analyzer + Job Match Recommendation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that analyzes resumes using AI and recommends suitable job roles based on the candidate's skills.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Upload resume in PDF format
+- Extract resume text automatically
+- AI-powered resume analysis using Ollama and Llama 3.2
+- Extract skills, education, experience and projects
+- Generate resume score
+- Identify missing skills
+- Match candidate skills with job requirements
+- Calculate job match percentage
+- Search and filter recommended jobs
+- Store analyzed resumes in MongoDB Atlas
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js
+- Express.js
+- Multer
+- PDF-Parse
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### AI
+- Ollama
+- Llama 3.2
+
+### Database
+- MongoDB Atlas
+- Mongoose
+
+## Project Flow
+
+Resume PDF
+→ Text Extraction
+→ AI Resume Analysis
+→ Skill Extraction
+→ Job Matching
+→ Match Percentage
+→ MongoDB Storage
+
+## Project Structure
+
+```text
+ai-resume-job-matcher/
+├── backend/
+│   ├── jobs.js
+│   ├── Resume.js
+│   ├── server.js
+│   └── .env
+├── frontend/
+│   └── src/
+├── .gitignore
+└── package.json
