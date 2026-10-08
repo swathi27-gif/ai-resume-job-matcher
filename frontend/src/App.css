@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.app > h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.app > p {
+  text-align: center;
+  color: #6b7280;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.upload-box {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.upload-box > h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #f8fafc;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.upload-box > p {
+  text-align: center;
+}
+
+.upload-box > div {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.upload-box h3 {
+  color: #374151;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.upload-box h3 + p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 25px 0;
+}
+/* Recommended Jobs */
+
+.upload-box > div:last-child {
+  margin-top: 30px;
+}
+
+.upload-box > div:last-child h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.upload-box > div:last-child > div {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.upload-box > div:last-child > div h3 {
+  margin-top: 0;
+  color: #111827;
+  font-size: 20px;
+}
+
+.upload-box > div:last-child > div p {
+  text-align: left;
+  margin: 8px 0;
+}
+
+.upload-box > div:last-child > div p:nth-of-type(2) {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 18px;
+}
